@@ -32,8 +32,7 @@ powershell.exe -ExecutionPolicy Bypass -File "C:\Temp\Join-Object.ps1"
 ```
 powershell.exe -ExecutionPolicy Bypass -File "C:\Temp\GetCLSID.ps1"
 ```
-* Verify following files are generated
-<br>
+* Verify following files are generated <br>
 > CLSIDs.csv: List of CLSIDs and APIDs in CSV format.<br>
 > CLSID.list: List of CLSIDs only.
 
