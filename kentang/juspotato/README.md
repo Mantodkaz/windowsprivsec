@@ -26,13 +26,13 @@ Optional args:
 ```
 powershell.exe -ExecutionPolicy Bypass -File "C:\Temp\Join-Object.ps1"
 ```
-### get list CLSIDs and APIDs
+### get list CLSIDs
 ```
 powershell.exe -ExecutionPolicy Bypass -File "C:\Temp\GetCLSID.ps1"
 ```
-### get list CLSIDs and APIDs
+### checking CLSIDs
 ```
-
+.\get.bat
 ```
 
 
