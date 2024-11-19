@@ -21,27 +21,28 @@ Optional args:
 -z only test CLSID and print token's user
 ```
 
-## Checking CLSIDs
+## PoC 
 ### run first
 ```
 powershell.exe -ExecutionPolicy Bypass -File "C:\Temp\Join-Object.ps1"
 ```
-does not provide direct output. Make sure there are no errors.
+> does not provide direct output. Make sure there are no errors.
 
-### get list CLSIDs
+### get list CLSIDs :
 ```
 powershell.exe -ExecutionPolicy Bypass -File "C:\Temp\GetCLSID.ps1"
 ```
-Verify following files are generated:<br>
-CLSIDs.csv: List of CLSIDs and APIDs in CSV format.<br>
-CLSID.list: List of CLSIDs only.
+* Verify following files are generated
+<br>
+> CLSIDs.csv: List of CLSIDs and APIDs in CSV format.<br>
+> CLSID.list: List of CLSIDs only.
 
 
-### checking CLSIDs
+### checking CLSIDs :
 ```
 .\get.bat
 ```
-result will saved on kaz.log
+> result will saved on kaz.log
 
 ### or
 
@@ -62,8 +63,8 @@ method 2
 
 ## reference
 
-[hacktricks](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/juicypotato)<br>
-[ohpe](https://github.com/ohpe/juicy-potato/blob/master/README.md)
+* [hacktricks](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/juicypotato)<br>
+* [ohpe](https://github.com/ohpe/juicy-potato/blob/master/README.md)
 
 
 
