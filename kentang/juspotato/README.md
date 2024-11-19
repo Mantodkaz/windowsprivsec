@@ -60,6 +60,11 @@ method 2
 ```
 
 
+## reference
+
+[hacktricks](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/juicypotato)<br>
+[ohpe](https://github.com/ohpe/juicy-potato/blob/master/README.md)
+
 
 
 
